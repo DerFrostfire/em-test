@@ -9,5 +9,5 @@ CREATE TABLE actions(
     action VARCHAR(255),
     user_id INTEGER,
     timestamp timestamp,
-    FOREIGN KEY (user_id) REFERENCES person(id)
+    FOREIGN KEY (user_id) REFERENCES person(id) ON DELETE CASCADE
 );
